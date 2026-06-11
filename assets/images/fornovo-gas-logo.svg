@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 104" role="img" aria-labelledby="title desc">
+  <title id="title">Fornovo Gas</title>
+  <desc id="desc">Fornovo Gas, We Move Energy</desc>
+  <g transform="skewX(-10)">
+    <path fill="#075493" d="M18 16h70L76 34H35l-5 9h41L59 61H20L8 84h-24z"/>
+    <path fill="#10a8da" d="M96 16h52l-10 18h-29l-5 9h27l-10 18H94L82 84H58z"/>
+  </g>
+  <text x="145" y="67" fill="#10a8da" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" font-style="italic">FORNOVOGAS</text>
+  <text x="292" y="96" fill="#075493" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" font-style="italic" letter-spacing="2">WE MOVE ENERGY</text>
+</svg>

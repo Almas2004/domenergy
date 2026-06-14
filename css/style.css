@@ -100,14 +100,6 @@ a {
   transition: color 0.2s ease;
 }
 
-.mobile-br {
-  display: none;
-}
-
-.mobile-hyphen {
-  display: none;
-}
-
 .nav-link::after {
   position: absolute;
   right: 0;
@@ -187,6 +179,10 @@ a {
 
 .hero-content {
   max-width: none;
+}
+
+.home-hero {
+  align-items: center;
 }
 
 .hero-content h1,
@@ -846,7 +842,7 @@ h3 {
 }
 
 .plan-number--black {
-  background: #172019;
+  background: #000;
 }
 
 .contact-box {
@@ -1050,14 +1046,6 @@ h3 {
     width: min(calc(100% - 24px), 1160px);
   }
 
-  .mobile-br {
-    display: block;
-  }
-
-  .mobile-hyphen {
-    display: inline;
-  }
-
 
   .header-inner {
     min-height: 64px;
@@ -1086,7 +1074,8 @@ h3 {
 
   .home-hero .hero-content {
     max-width: 100%;
-    margin-top: -88px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .home-hero h1 {
@@ -1103,7 +1092,13 @@ h3 {
   }
 
   .home-hero .eyebrow {
+    max-width: 100%;
     margin-bottom: 14px;
+    line-height: 1.4;
+  }
+
+  .home-hero .eyebrow::before {
+    flex: 0 0 38px;
   }
 
   .hero:not(.home-hero) {

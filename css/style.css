@@ -690,13 +690,20 @@ h3 {
   box-shadow: var(--shadow);
 }
 
-.video-frame video {
+.video-frame video,
+.video-frame iframe,
+.video-poster {
   display: block;
   width: 100%;
+  border: 0;
   max-height: 680px;
   aspect-ratio: 16 / 9;
   background: #101811;
   object-fit: contain;
+}
+
+.video-poster {
+  object-fit: cover;
 }
 
 .video-play-button {

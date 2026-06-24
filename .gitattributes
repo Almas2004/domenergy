@@ -1,1 +1,2 @@
 assets/videos/*.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/videos/dom-metan-gas-short.mp4 -filter -diff -merge -text

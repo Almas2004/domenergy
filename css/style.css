@@ -691,8 +691,7 @@ h3 {
 }
 
 .video-frame video,
-.video-frame iframe,
-.video-poster {
+.video-frame iframe {
   display: block;
   width: 100%;
   border: 0;
@@ -700,10 +699,6 @@ h3 {
   aspect-ratio: 16 / 9;
   background: #101811;
   object-fit: contain;
-}
-
-.video-poster {
-  object-fit: cover;
 }
 
 .video-play-button {

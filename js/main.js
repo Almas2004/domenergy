@@ -119,27 +119,15 @@ if (stationMap && stationQr) {
 }
 
 document.querySelectorAll(".video-frame").forEach((frame) => {
-  const poster = frame.querySelector(".video-poster");
+  const video = frame.querySelector("video");
   const playButton = frame.querySelector(".video-play-button");
 
-  if (!frame.dataset.youtubeEmbed || !playButton) {
+  if (!video || !playButton) {
     return;
   }
 
-  playButton.addEventListener("click", () => {
-    const iframe = document.createElement("iframe");
-    iframe.src = frame.dataset.youtubeEmbed;
-    iframe.title = "DOM Metan Gas video";
-    iframe.referrerPolicy = "strict-origin-when-cross-origin";
-    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-    iframe.allowFullscreen = true;
-
-    if (poster) {
-      poster.replaceWith(iframe);
-    } else {
-      frame.insertBefore(iframe, playButton);
-    }
-
-    playButton.classList.add("is-hidden");
-  });
+  playButton.addEventListener("click", () => video.play());
+  video.addEventListener("play", () => playButton.classList.add("is-hidden"));
+  video.addEventListener("pause", () => playButton.classList.remove("is-hidden"));
+  video.addEventListener("ended", () => playButton.classList.remove("is-hidden"));
 });
